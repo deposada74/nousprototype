@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+
+.perfil-targeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: rgb(1, 64, 119);
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0  10px 10px rgba(104, 100, 100, 0.39);
+    position: relative;
+}
+
+.perfil-targeta::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 36%;
+    background-color: white;
+    border-radius: 24px 24px 0 0;
+}
+
+
+.image{
+    position: relative;
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .perfil-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:  3px solid white;
+}
+
+.perfil-targeta .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .Rol{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.perfil-targeta .media-button{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.media-button .link{
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    color: aliceblue;
+    width: 34px;
+    height: 34px;
+    margin: 0 8px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 2px;
+}
+
+
+
+.perfil-targeta .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.buttons .button:hover{
+    background-color: yellow;
+}
+

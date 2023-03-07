@@ -1,0 +1,5 @@
+
+/* Quitar el color al pasar el mouse por el titulo*/
+.titulo:hover{
+    color: rgb(97, 180, 194);
+}

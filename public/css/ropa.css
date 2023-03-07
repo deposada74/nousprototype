@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.cuerpo {
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 250px;
+    height: 420px;
+    border: solid #000000;
+    border-width: 0.2rem 0 0;
+    background-color: #f7f7f9;
+}
+
+.imagen {
+    width: 100%;
+    height: 250px;
+}
+
+.nombre {
+    max-width: 250px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre h3 {
+    font-size: 1.2em;
+    /* tamaño de fuente inicial */
+    white-space: nowrap;
+    /* evitar saltos de línea */
+    overflow: hidden;
+    /* ocultar texto que desborda */
+    text-overflow: ellipsis;
+    /* agregar puntos suspensivos al final */
+}
+
+.talla {
+    margin-left: 5px;
+    width: 100%;
+    height: 27px;
+}
+
+.descripcion {
+    margin-left: 5px;
+    width: 100%;
+    height: 60px;
+}
+
+.add {
+    width: 100%;
+    margin-left: 5px;
+    text-align: center;
+}
+
+#agregar {
+    padding: 5px 10px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.icono {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url('/img/carrito.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

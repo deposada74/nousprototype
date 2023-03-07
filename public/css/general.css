@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+.contenedor{
+    position: fixed;
+    width: 100%;
+}
+
+/*bton menú*/
+.menu{
+    float: left;
+    margin-left: 150px;
+}
+
+/* Posicion barra de busqueda */
+.busqueda{
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 150px;
+}
+.contenttitulo{
+  display: flex;
+  justify-content: center;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+}
+.titulo{
+  /* Darle formato al titulo principal */
+  font-size: 150px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Gloock', serif;
+  
+  /* Centrar el titulo principal*/
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mtitulo{
+    font-family: 'Gloock', serif;
+    color: black;
+}
+/* Tamaño del menu */
+.offcanvas-start{
+    width: 250px;
+}
+.btn {
+    background: rgb(97, 180, 194);
+    margin-top: 2;
+    float: left;
+    border-color: black;
+}
+/* Quitar el subrayado a las etiquetas <a> poner el color del texto en negro */
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: none;
+}
+/* Cambiar el color a las etiquetas <a> al pasar el mouse */
+a:hover{
+    color: rgb(97, 180, 194);
+
+}
+.accordion-item{
+    font-family: 'Gloock', serif;
+}
+.menu-button{
+    border: none;
+    background: none;
+}
+.menu-button:hover{
+    color: rgb(97, 180, 194);
+}
+/* Efecto de ola */
+
+.contenedor-menu-titulo{
+  height: 60%;
+  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+}
