@@ -76,9 +76,9 @@
                             <div class="accordion-body">
                                 <!-- Lista desordenada   -->
                                 <dl>
-                                    <dt><button class="menu-button">Carrito de compras</button></dt>
-                                    <dt><button class="menu-button">Administrador</button></dt>
-                                    <dt><button class="menu-button">Vender</button></dt>
+                                    <dt><button class="menu-button" onclick="carrito();">Carrito de compras</button></dt>
+                                    <dt><button class="menu-button" onclick="admin();">Administrador</button></dt>
+                                    <dt><button class="menu-button" onclick="ventas();">Vender</button></dt>
                                 </dl>
                             </div>
                         </div>
@@ -98,10 +98,10 @@
                             <div class="accordion-body">
                                 <!-- Lista desordenada -->
                                 <dl>
-                                    <dt><button class="menu-button" onclick="entrar()">Iniciar seccion</button></dt>
-                                    <dt><button class="menu-button" onclick="entrar()">Registrarse</button></dt>
-                                    <dt><button class="menu-button">Administrador</button></dt>
-                                    <dt><button class="menu-button" onclick="cuenta()">Usuario</button></dt>
+                                    <dt><button class="menu-button" onclick="entrar();">Iniciar seccion</button></dt>
+                                    <dt><button class="menu-button" onclick="entrar();">Registrarse</button></dt>
+                                    <dt><button class="menu-button" onclick="admin();">Administrador</button></dt>
+                                    <dt><button class="menu-button" onclick="cuenta();">Usuario</button></dt>
                                 </dl>
                             </div>
                         </div>
@@ -121,8 +121,8 @@
                             <div class="accordion-body">
                                 <!-- Lista desordenada -->
                                 <dl>
-                                    <dt><button class="menu-button">¿Tienes una cuenta?</button></dt>
-                                    <dt><button class="menu-button">Politicas de venta</button></dt>
+                                    <dt><button class="menu-button" onclick="entrar();">¿Tienes una cuenta?</button></dt>
+                                    <dt><button class="menu-button" onclick="politicas();">Politicas de venta</button></dt>
                                 </dl>
                             </div>
                         </div>
@@ -154,18 +154,18 @@
                                         <div class="accordion-body">
                                             <!-- Lista desordenada -->
                                             <dl>
-                                                <dt><button class="menu-button" onclick="hombre()">Hombre</button></dt>
-                                                <dt><button class="menu-button" onclick="mujer()">Mujer</button></dt>
-                                                <dt><button class="menu-button">Niños</button></dt>
+                                                <dt><button class="menu-button" onclick="hombre();">Hombre</button></dt>
+                                                <dt><button class="menu-button" onclick="mujer();">Mujer</button></dt>
+                                                <dt><button class="menu-button" onclick="niños();">Niños</button></dt>
                                             </dl>
                                         </div>
                                     </div>
                                 </div><!-- collapse option Ropa -->
                                 <!-- Lista desordenada -->
                                 <dl>
-                                    <dt><button class="menu-button">Deportes</button></dt>
-                                    <dt><button class="menu-button">Papeleria</button></dt>
-                                    <dt><button class="menu-button">Juguetes</button></dt>
+                                    <dt><button class="menu-button" onclick="deportes();">Deportes</button></dt>
+                                    <dt><button class="menu-button" onclick="papeleria();">Papeleria</button></dt>
+                                    <dt><button class="menu-button" onclick="juguetes();">Juguetes</button></dt>
                                 </dl><!-- Lista desordenada -->
                             </div>
                         </div>
@@ -182,7 +182,7 @@
             <img class="imagen" src="resources/img/camisa.jpg" alt="">
         </div>
         <div class="nombre">
-            <h3>Blusa manga larga</h3>
+            <h3>Blusa manga larga azul hecha de seda tejida a mano</h3>
         </div>
         <div class="talla">
             <p>Talla <strong>M L X XL</strong></p>
@@ -191,7 +191,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -211,7 +211,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -231,7 +231,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -251,7 +251,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -271,7 +271,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -291,7 +291,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -311,7 +311,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -331,7 +331,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -351,7 +351,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -371,7 +371,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -391,7 +391,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
@@ -411,7 +411,7 @@
             <p>Producto realizado a vase de a algodon producido en colombia</p>
         </div>
         <div class="add">
-            <button id="agregar">
+            <button class="agregar" id="agregar">
                 Agregar al carrito
                 <span class="icono"></span>
             </button>
