@@ -6,54 +6,197 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="resources/css/perfil.css">
+    <link rel="stylesheet" href="resources/css/general.css">
+
 </head>
 
 <body>
-   
+    <!-- contenedor menu y titulo -->
+    <div class="contenedor-menu-titulo">
+        <!-- Contenedor barra de busqueda y boton menu -->
+        <div class="contenedor">
+            <!-- menu btn -->
+            <button class="btn btn- menu mt-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColorblack"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button><!-- menu btn -->
 
-    <div class="perfil-targeta">
-        <div class="image">
-            <img src="resources/img/vincent.jpg" alt="" class="perfil-img">
-        </div>
+            <!-- navbar -->
+            <form class="d-flex busqueda" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn" type="submit">Buscar</button>
+            </form><!-- navbar -->
+        </div><!-- Contenedor barra de busqueda y boton menu -->
+
+        <!-- Titulo -->
+        <div class="perfiltitulo">
+            <div>
+                <h1><button class="tituloperfil menu-button">PERFIL</button></h1>
+            </div>
+        </div><!-- Titulo -->
 
 
-        <div class="text-data">
-            <span class="name">Vincent Van Gogh</span>
-            <span class="Rol">Pintor</span>
-        </div>
-        <div class="media-button">
-            <a href="#" class="link">
-                <i class="icon-aju">
-                    <img src="resources/img/bxs-x-circle.svg" alt="">
-                </i>
-            </a>
-            <a href="#" class="link">
-                <i class="icon-car">
-                    <img src="resources/img/bxs-cart-add.svg" alt="">
-                </i>
-            </a>
-            <a href="#" class="link">
-                <i class="icon-car">
-                    <img src="resources/img/bxs-cart-add.svg" alt="">
-                </i>
-            </a>
-            <a href="#" class="link">
-                <i class="icon-car">
-                    <img src="resources/img/bxs-cart-add.svg" alt="">
-                </i>
-            </a>
-        </div>
-        <!-- PRUEBA -->
-        <div class="perfil-usuario">
-            <ul class="lista-datos">
-                <li></li>
-            </ul>
-        </div>
-        <div class="buttons">
-            <button class="button">Configuracion</button>
-            <button class="button">Cerrar sesion</button>
-        </div>
+        <!-- menu -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title mtitulo" id="offcanvasScrollingLabel"><button class="menu-button"
+                        onclick="inicio()">NOUS</button></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- Cuerpo del menu -->
+            <div class="offcanvas-body">
+
+                <!-- Menu options -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <!--  collapse option Inicio -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingInicio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseInicio" aria-expanded="false"
+                                aria-controls="flush-collapseInicio">
+                                Inicio
+                            </button>
+                        </h2>
+                        <div id="flush-collapseInicio" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingInicio" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <!-- Lista desordenada   -->
+                                <dl>
+                                    <dt><button class="menu-button" onclick="carrito();">Carrito de compras</button>
+                                    </dt>
+                                    <dt><button class="menu-button" onclick="admin();">Administrador</button></dt>
+                                    <dt><button class="menu-button" onclick="ventas();">Vender</button></dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </div><!--  collapse option Inicio -->
+
+                    <!--  collapse option Entrar -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingEntrar">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEntrar" aria-expanded="false"
+                                aria-controls="flush-collapseEntrar">
+                                Entrar
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEntrar" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingEntrar" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <!-- Lista desordenada -->
+                                <dl>
+                                    <dt><button class="menu-button" onclick="entrar();">Iniciar seccion</button>
+                                    </dt>
+                                    <dt><button class="menu-button" onclick="entrar();">Registrarse</button></dt>
+                                    <dt><button class="menu-button" onclick="admin();">Administrador</button></dt>
+                                    <dt><button class="menu-button" onclick="cuenta();">Usuario</button></dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </div><!--  collapse option Entrar -->
+
+                    <!--  collapse option Vender -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingVender">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseVender" aria-expanded="false"
+                                aria-controls="flush-collapseVender">
+                                Vender
+                            </button>
+                        </h2>
+                        <div id="flush-collapseVender" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingVender" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <!-- Lista desordenada -->
+                                <dl>
+                                    <dt><button class="menu-button" onclick="entrar();">¿Tienes una cuenta?</button>
+                                    </dt>
+                                    <dt><button class="menu-button" onclick="politicas();">Politicas de
+                                            venta</button></dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </div><!-- collapse option Vender -->
+
+                    <!-- collapse option Categorias -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingCategorias">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseCategorias" aria-expanded="false"
+                                aria-controls="collapseCategorias">
+                                Categorias
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCategorias" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingCategorias" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <!-- collapse option Ropa -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingRopa">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseRopa" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseRopa">
+                                            Ropa
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseRopa" class="accordion-collapse collapse show"
+                                        aria-labelledby="panelsStayOpen-headingRopa">
+                                        <div class="accordion-body">
+                                            <!-- Lista desordenada -->
+                                            <dl>
+                                                <dt><button class="menu-button" onclick="hombre();">Hombre</button>
+                                                </dt>
+                                                <dt><button class="menu-button" onclick="mujer();">Mujer</button>
+                                                </dt>
+                                                <dt><button class="menu-button" onclick="niños();">Niños</button>
+                                                </dt>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div><!-- collapse option Ropa -->
+                                <!-- Lista desordenada -->
+                                <dl>
+                                    <dt><button class="menu-button" onclick="deportes();">Deportes</button></dt>
+                                    <dt><button class="menu-button" onclick="papeleria();">Papeleria</button></dt>
+                                    <dt><button class="menu-button" onclick="juguetes();">Juguetes</button></dt>
+                                </dl><!-- Lista desordenada -->
+                            </div>
+                        </div>
+                    </div><!-- collapse option Categorias -->
+                </div><!-- Menu options -->
+            </div><!-- Cuerpo del menu -->
+        </div><!-- menu -->
+    </div><!-- contenedor menu y titulo -->
+
+    <!-- Targetas perfil del usuario -->
+    <div class="cuerpo">
+        <a href="" class="pedidos">
+            <div class="imgperfil"><img src="" alt=""></div>
+            <div class="titulotargeta">
+                <h2>Cuenta</h2>
+                <div>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
+                    </span>
+                </div>
+            </div>
+        </a>
     </div>
+
 </body>
+<script src="resources/js/menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
 </html>
